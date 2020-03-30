@@ -1,5 +1,3 @@
-import shogun
-from shogun import *
 import os
 import numpy as np
 import flask
