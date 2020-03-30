@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Shogun sample</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Linear Regression sample model</h1>
+    {% if ans != -1 %}
+    <h2 style="text-align: center">Previous prediction: {{ans}}</h2>
+    {% else %}
+    {% endif %}
+    <h4 style="text-align: center">Fill in values of x1, x2 and x3 from the range of 0-10 to get the prediction using linear regression.</h4>
+    <form action="/" method="POST">
+        <input type="text" name="x1" id="x1" value="{{x1}}">
+        <input type="text" name="x2" id="x2" value="{{x2}}">
+        <input type="text" name="x3" id="x3" value="{{x3}}">
+        <input type="submit" value="get Prediction">
+    </form>
+
+</div>
+{% endblock %}
